@@ -1,0 +1,101 @@
+/* Work Experience Section */
+.work-experience-section {
+  padding: 50px 0;
+  background-color: #f7f7f7;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+
+/* Work Experience List */
+.work-experience-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Work Experience Card */
+.work-experience-card {
+  background: rgba(255, 255, 255, 0.2); /* Base glassmorphism effect */
+  border-radius: 15px;
+  padding: 25px;
+  text-align: left;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Enhanced shadow for depth */
+  width: 100%;
+  max-width: 600px;
+  transition: transform 0.4s ease, box-shadow 0.4s ease, background-color 0.4s ease;
+  position: relative;
+  backdrop-filter: blur(12px); /* Frosted glass effect */
+  border: 1px solid rgba(255, 255, 255, 0.3); /* Slightly thicker border */
+}
+
+/* Gradients for specific companies */
+.work-experience-card[data-company="Infosys"] {
+  background: linear-gradient(145deg, #003366, #0099ff); /* Infosys gradient */
+  border-left: 8px solid #003366; /* Accent color based on company logo */
+}
+
+.work-experience-card[data-company="Cognizant"] {
+  background: linear-gradient(145deg, #00274d, #00bcd4); /* Cognizant gradient */
+  border-left: 8px solid #00274d; /* Accent color based on company logo */
+}
+
+/* Accent line and lift effect on hover */
+.work-experience-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -10px; /* Adjusted for better positioning */
+  width: 12px; /* Slightly wider line */
+  height: 100%;
+  background-color: rgba(74, 144, 226, 0.5); /* Soft accent line color */
+  transition: background-color 0.4s ease;
+}
+
+.work-experience-card:hover {
+  transform: translateY(-12px); /* Slightly more lift effect */
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3); /* Deeper shadow on hover */
+  background: rgba(255, 255, 255, 0.5); /* More opaque on hover */
+}
+
+/* Adjusted text colors for better contrast */
+.work-experience-role {
+  font-size: 1.5rem; /* Slightly larger for emphasis */
+  font-weight: 700; /* Bolder font for better visibility */
+  color: #222;
+  margin-bottom: 10px; /* Increased margin for better spacing */
+}
+
+.work-experience-company {
+  font-size: 1.2rem; /* Larger font size */
+  font-weight: 600; /* Slightly bolder font */
+  color: #444;
+}
+
+.work-experience-date {
+  font-size: 1.1rem; /* Larger font size */
+  color: #555;
+  margin-bottom: 12px; /* Increased margin for better spacing */
+}
+
+.work-experience-description {
+  font-size: 1.2rem; /* Larger font size */
+  color: #333;
+  line-height: 1.7; /* Increased line height for better readability */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .work-experience-list {
+    padding: 0 20px;
+  }
+}

@@ -1,0 +1,153 @@
+.certifications-section {
+  padding: 50px;
+  background-color: #f4f4f4;
+}
+
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+.certifications-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+
+.certification-card {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 100%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.certification-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.certification-name {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.certification-issued-by,
+.certification-date,
+.certification-description {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 5px;
+}
+
+.certification-issued-by::before {
+  content: "Issued by: ";
+  font-weight: bold;
+}
+
+.certification-date::before {
+  content: "Date: ";
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .certifications-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+}
+
+@media (max-width: 480px) {
+  .certifications-grid {
+    grid-template-columns: 1fr;
+  }
+}
+.certifications-section {
+  padding: 50px;
+  background-color: #f4f4f4;
+}
+
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Grid layout */
+.certifications-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+
+/* Individual card styling */
+.certification-card {
+  background-color: #e6f7ff; /* Light blue background for cards */
+  border-left: 5px solid #1890ff; /* Accent color on the left border */
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 100%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* Hover effect */
+.certification-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  background-color: #cceeff; /* Slightly darker blue on hover */
+}
+
+/* Certification name */
+.certification-name {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+/* Text colors for issued by, date, and description */
+.certification-issued-by,
+.certification-date,
+.certification-description {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 5px;
+}
+
+/* Bold prefixes for issued by and date */
+.certification-issued-by::before {
+  content: "Issued by: ";
+  font-weight: bold;
+}
+
+.certification-date::before {
+  content: "Date: ";
+  font-weight: bold;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  .certifications-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+}
+
+@media (max-width: 480px) {
+  .certifications-grid {
+    grid-template-columns: 1fr;
+  }
+}
